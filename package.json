@@ -1,0 +1,31 @@
+{
+  "name": "node_assesment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "migration:generate": "typeorm migration:generate -d src/data-source.js src/migrations/Initial --outputJs",
+    "migration:run": "typeorm migration:run -d src/data-source.js",
+    "migration:revert": "typeorm migration:revert -d src/data-source.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "experimentalDecorators": true,
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typeorm": "^0.3.27"
+  }
+}
