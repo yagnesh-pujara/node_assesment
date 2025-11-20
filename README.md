@@ -39,22 +39,30 @@ functionality for user management as described in the assessment.
 
 ## 📦 Project Structure
 
-    src/
-      controllers/
-        authController.js
-        userController.js
-      middleware/
-        auth.js
-      routes/
-        authRoutes.js
-        userRoutes.js
-      entity/
-        User.js
-      migrations/
-      data-source.js
-      app.js
-    .env
-    package.json
+```
+node_assesment
+├─ Node_Assessment.postman_collection.json
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ src
+│  ├─ app.js
+│  ├─ controllers
+│  │  ├─ authController.js
+│  │  └─ userController.js
+│  ├─ data-source.js
+│  ├─ entity
+│  │  └─ User.js
+│  ├─ middleware
+│  │  └─ auth.js
+│  ├─ migrations
+│  │  └─ 1763629209285-Initial.js
+│  └─ routes
+│     ├─ authRoutes.js
+│     └─ userRoutes.js
+└─ typeorm.config.js
+
+```
 
 ------------------------------------------------------------------------
 
@@ -111,14 +119,14 @@ Server runs on:
 
 ### Auth APIs
 
-```http
+```
 - POST /auth/register
 - POST /auth/login
 ```
 
 ### Users APIs
 
-```http
+```
 - GET /users
 - GET /users/:id
 ````
@@ -149,3 +157,4 @@ A Postman collection file is included:
 Import it into Postman to test all APIs.
 
 ------------------------------------------------------------------------
+
